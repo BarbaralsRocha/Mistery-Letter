@@ -26,3 +26,15 @@ function createdLetter() {
   });
 }
 createdLetter();
+
+function changeClass() {
+  cartaGerada.addEventListener('click', (event) => {
+    event.target.classList = cLassesAll[Math.round(Math.random() * (cLassesAll.length - 1))];
+    event.target.classList.add(cLassesAll[Math.round(Math.random() * (cLassesAll.length - 1))]);
+  });
+  cartaGerada.addEventListener('click', (event) => {
+    event.target.classList = cLassesAll[Math.round(Math.random() * (cLassesAll.length - 1))];
+    event.target.classList.add(cLassesAll[Math.round(Math.random() * (cLassesAll.length - 1))]);
+  });
+}
+changeClass();
